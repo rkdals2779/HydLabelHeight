@@ -1,0 +1,11 @@
+<launch>
+
+  <node pkg="robot_setup_tf" type="baselink_linkbase.py" name="baselink_to_linkbase"/>
+  <!-- <node pkg="robot_setup_tf" type="aruco_l515.py" name="aruco_to_l5l5"/> -->
+  <node pkg="robot_setup_tf" type="l515_linkbase.py" name="l515_to_linkbase"/>
+  <!-- <node pkg="robot_setup_tf" type="aruco_d455.py" name="aruco_to_d455"/> -->
+  <!-- <node pkg="robot_setup_tf" type="d455_baselink.py" name="d455_to_baselink"/> -->
+  <node pkg="aruco" type="aruco.py" name="aruco" output="screen"/>
+  <node pkg="robot_setup_tf" type="velodyne_baselink.py" name="velodyne_to_baselink"/>
+
+</launch>

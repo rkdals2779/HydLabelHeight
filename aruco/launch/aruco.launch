@@ -1,0 +1,7 @@
+<launch>
+
+  <node pkg="aruco" type="aruco_l515.py" name="aruco_l515"/>
+  <!-- <node pkg="aruco" type="aruco_d455.py" name="aruco_d455"/> -->
+  <node pkg="aruco" type="aruco_pub.py" name="aruco_pub" output="screen"/>
+
+</launch>
